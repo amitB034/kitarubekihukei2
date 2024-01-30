@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block contents %}
+
+<div class = 'form'>
+    <form method = 'post'>
+        {% csrf_token %}
+        <h1 class="mt-10 mb-3 text-3xl" style = 'text-align:center; border-bottom: 1px solid black;'>Signup Form</h1>
+        {% for fields in form %}
+        <div class = 'mt-2'>
+            <div class = 'info'>
+                
+                    {{ fields.label_tag }}<span class="ml-2 bg-orange-600 text-white">必須</span>
+                    <br>
+                    <p>
+                    {{ fields }}
+                    </p>
+
+
+            </div>
+            {% for error in fields.errors %}
+                <p style = 'color: red'>{{ error }}</p>
+            {% endfor %}
+            </p>
+        </div>
+        {% endfor %}
+        <div class="flex flex-col mt-4">
+            <input class = 'mt-3 w-30  p-2 rounded-xl bg-green-600 hover:bg-green-700 text-white' type = 'submit' value = '登録'>
+        </div>
+    </form>
+    <button class = 'mt-3' href = '{% url "timelines:top" %}'>トップページへ戻る</a>
+</div>
+
+{% endblock %}

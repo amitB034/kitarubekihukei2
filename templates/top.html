@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block contents %}
+
+<div class = 'flex-col items-center text-center'>
+    <div class = 'top-container'>
+        <h2 class="text-4xl mt-10">Mag Trip</h2>
+
+        <h5 class="mt-4 w-30  p-3 rounded-xl bg-green-600 text-white">~美しい建造物、壮大な自然~</h5>
+        
+        {% if user.is_authenticated %}
+        <div class = 'flex flex-col items-center mt-4'>
+            <a class="text-xl text-sky-500" href = '{% url "timelines:index" %}'>投稿を見る</a>
+            <a class="mt-3 w-30  p-2 rounded-xl bg-green-600 hover:bg-green-700 text-white" href = '{% url "timelines:create" %}'>新しい投稿をする</a>
+        </div>
+        {% else %}
+        <div class = 'tab'>
+                <div class = 'tab_panel-box tab_panel-box002' data-tab = '02'>
+                    <p>アカウントをお持ちの方はこちら</p>
+                    <button class = '' onClick = "location.href = '{% url 'accounts:login' %}'">ログイン</button>
+                    <br></br>
+                    <p>アカウントを持っていない方はこちら</p>
+                    <button class = '' onClick = "location.href = '{% url 'accounts:signup' %}'">アカウント作成</button>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<script src = '{% static 'js/index.js' %}'></script>
+{% endblock %}

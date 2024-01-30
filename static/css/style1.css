@@ -1,0 +1,215 @@
+body {
+    background-color: rgb(251, 152, 3);
+    font-family: Meirio;
+}
+
+.timeline {
+    width: 60%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.timeline h3 {
+    border-bottom: 1px solid black;
+}
+
+.comment {
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.comment h5 {
+    border-bottom: 1px solid black;
+}
+
+.card {
+    width: 30%;
+    margin: 20px auto;
+}
+
+.created_at {
+    float: right;
+}
+
+.inputarea {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.form {
+    background:#fff;
+    border-radius:6px;
+    padding:20px;
+    padding-top:30px;
+    width:60%;
+    margin:50px auto;
+    box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.resetform {
+    background:#fff;
+    border-radius:6px;
+    padding:20px;
+    padding-top:30px;
+    width:80%;
+    margin:50px auto;
+    box-shadow:5px 5px 0px rgba(0,0,0,.1);
+}
+
+.resetform h1 {
+    border-bottom: 1px solid black;
+}
+
+.userinfo {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.info {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.info span {
+    background-color: rgb(218, 175, 34);
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
+
+.info input {
+    margin-top: 20px;
+}
+
+.btn_auth {
+    text-align: center;
+    width: 30%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(222, 52, 173);
+    
+    box-shadow: 2px 2px 0px rgb(74, 73, 73);
+}
+
+.btn_auth:active {
+    top: 3px;
+    box-shadow: none;
+}
+
+.btn_auth2{
+    text-align: center;
+    width: 30%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(222, 52, 173);
+    
+    box-shadow: 2px 2px 0px rgb(74, 73, 73);
+}
+
+.tab {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+  
+.top-container h2, h5 {
+    margin-top: 50px;
+    text-align: center
+}
+
+.tab_menu {
+    display: flex;
+    align-items: flex-end; 
+    justify-content: left;
+    min-height: 50px; 
+    padding: 0;
+    margin: 0;
+}
+  
+.tab_menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px; 
+    text-align: center;
+    margin-right: 6px;
+    background-color: #cdcdcd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: all .3s; 
+}
+  
+.tab_menu-item:last-of-type {
+    margin-right: 0px;
+ }
+
+.tab_menu-item.is-active {
+    background-color: rgba(48, 172, 249);
+    color: #ffffff;
+    padding: 12px 5px;
+}
+
+.tab_panel {
+    width: 100%;
+}
+
+.tab_panel-box {
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+.tab_panel-box001 {
+    background-color: rgb(205, 246, 246);
+    display: none;
+}
+
+.tab_panel-box002 {
+    background-color: rgb(249, 227, 243);
+    display: none;
+}
+
+.tab_panel-box.is-show {
+    display: block;
+}
+
+.btn-auth {
+    text-align: center;
+    width: 40%;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgb(45, 175, 250);
+    color: white;
+    box-shadow: 2px 2px 0px rgb(74, 73, 73);
+}
+
+.btn-auth:hover {
+    background-color: rgb(247, 100, 1);
+    box-shadow: none;
+}
+
+.top-container {
+    text-align: center;
+}
+
+.top-container .btn-auth {
+    margin-top: 30px;
+}
+
+.form-area {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.form-container h2 {
+    border-bottom: 1px solid black;
+}
+
+.mb-3 {
+    margin-top: 30px;
+}
+
+.info h5 {
+    margin-bottom: 30px;
+}
