@@ -2,9 +2,10 @@ from django.db import models
 from accounts.models import User
 # Create your models here.
 class Post(models.Model):
-    posted_at = models.DateTimeField(auto_now_add=True, verbose_name = '返信日時')
-    text = models.TextField(null=True)
-    video = models.FileField(upload_to='media/%Y/%m/%d/',blank=True, null=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE ,verbose_name = 'ユーザー')
+    text = models.TextField(verbose_name = '本文')
+    created_at = models.DateTimeField(auto_now_add=True, verbose_name = '投稿日時')
+    post = models.FileField(upload_to='media/%Y/%m/%d/',blank=True, null=True)
 
     def __str__(self):
         return self.text

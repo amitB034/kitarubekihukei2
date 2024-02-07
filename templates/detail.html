@@ -21,10 +21,9 @@
         <p>費用など：</p>
     </div>
     <p class="flex justify-between">
-    {% if post.user == user %}
         <a href = '{% url "timelines:update" post.pk %}' class="bg-sky-500 p-2 px-3 rounded-xl text-white" >更新</a>
         <a href = '{% url "timelines:delete" post.pk %}' class="bg-red-600 p-1 text-white">削除する</a>
-    {% endif %}
+
     </p>
     <a href = '{% url "timelines:comment" post.pk %}' class ="text-sky-500">コメントを書く</a>
   </div>

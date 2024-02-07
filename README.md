@@ -1,2 +1,1 @@
-# django_sns4# kitarubekifu
-# kitarubekihukei2
+# django_sns4

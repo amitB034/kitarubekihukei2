@@ -11,13 +11,12 @@ from accounts.models import User
 class TopView(TemplateView):
     template_name = 'top.html'
 
-@method_decorator(login_required, name = 'dispatch')
 class IndexView(ListView):
     template_name = 'index.html'
     context_object_name = 'posts'
     
     def get_queryset(self):
-        queryset = Post.objects.all().order_by('-posted_at')
+        queryset = Post.objects.all().order_by('-created_at')
         return queryset
     
 
